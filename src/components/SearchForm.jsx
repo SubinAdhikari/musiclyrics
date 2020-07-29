@@ -70,7 +70,7 @@ getAlbumInfo();
     return(
 <div className="parentDiv">
         <div className="searchFormMainDiv" id="searchFormMainDiv">
-            <div className="formTitle">Search the lyrics of you'r favourive music</div>
+            <div className="formTitle">Search the lyrics of you'r favourite music</div>
             <div className="inputField">
             <TextField
                     name="artistname"
