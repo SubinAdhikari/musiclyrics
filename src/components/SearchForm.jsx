@@ -3,6 +3,8 @@ import './style/SearchForm.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import axios from 'axios';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 const SearchForm = () =>{
     const [input,setInput]=useState({
@@ -30,9 +32,11 @@ const inputValueChange = (event) =>{
         .then( res =>{
             console.log(res);
             setLyrics(res.data.lyrics);
+            setLoading(true);
         } )
         .catch( err =>{
             console.log(err);
+            setLoading(true);
        })
   
     }
@@ -42,10 +46,12 @@ const inputValueChange = (event) =>{
 
         .then( res1 =>{
                      console.log(res1);
-                     setAlbumInfo(res1.data.album.image[3]);                    
+                     setAlbumInfo(res1.data.album.image[3]);
+                     setLoading(true);                    
                  } )
                  .catch( err =>{
                      console.log(err);
+                     setLoading(true);
                 })
   
     }
@@ -96,7 +102,10 @@ getAlbumInfo();
                     <div className="lyricsMain">
                     <div class="cardImg">
                             <div className="ImageOfMusic">
-                            {albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>}
+                                {loading ?        
+                                albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>
+                                : <CircularProgress disableShrink/>}
+                            {/* {albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>} */}
                         {/* <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> */}
                             </div>
                         <div className="musicInfo">
@@ -105,7 +114,10 @@ getAlbumInfo();
                         </div>
                     </div>
                     <div className="musicLyrics">
-                    {lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="/">Back To Home Page</a></h1>}
+                        {loading ? 
+                        lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="/">Back To Home Page</a></h1>
+                         : <CircularProgress disableShrink/> }
+                    {/* {lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="/">Back To Home Page</a></h1>} */}
                     </div>
                     </div>
                 </div>

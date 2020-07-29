@@ -108,6 +108,7 @@ align-items: center;
     overflow-y: scroll;
     font-family: 'Recursive', sans-serif;
     text-align: center;
+    font-size: 1.3rem;
 }
 /* .actualLyricsDiv{
     width: 100%;
