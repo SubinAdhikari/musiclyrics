@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da89fc3b1210d328e1a75406f7e8daf3",
+    "revision": "3ab097aad0848482d5bf3e1e9e4577d7",
     "url": "/musiclyrics/index.html"
   },
   {
-    "revision": "7ab44575e80243e445d5",
-    "url": "/musiclyrics/static/css/main.55829078.chunk.css"
+    "revision": "b8322fbd4e3c577ff322",
+    "url": "/musiclyrics/static/css/main.0fdaeda0.chunk.css"
   },
   {
     "revision": "30863c06866c016004b5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/musiclyrics/static/js/2.96ed55de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ab44575e80243e445d5",
-    "url": "/musiclyrics/static/js/main.305c4ce4.chunk.js"
+    "revision": "b8322fbd4e3c577ff322",
+    "url": "/musiclyrics/static/js/main.17046117.chunk.js"
   },
   {
     "revision": "93d30e00ff506de887cb",
