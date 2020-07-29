@@ -103,10 +103,12 @@ getAlbumInfo();
                     <div class="cardImg">
                             <div className="ImageOfMusic">
                                 {loading ?        
-                                albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>
+                                albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'70%'}}/> : <h1>Can't find the song art</h1>
                                 : <CircularProgress disableShrink/>}
                             {/* {albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>} */}
                         {/* <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> */}
+                        <Button id="searchAnotherLyrics" variant="contained" style={{margin:'20px'}}  href="">Search Another Lyrics</Button>
+
                             </div>
                         <div className="musicInfo">
                             {`Artist Name :- ${input['artistname']}`}<br/>

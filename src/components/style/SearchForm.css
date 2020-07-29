@@ -79,7 +79,7 @@ align-items: center;
 }
 .ImageOfMusic{
     width: 100%;
-    height: 50%;
+    height: 60%;
     /* background-color: coral; */
     display: flex;
     flex-direction: column;
@@ -89,8 +89,9 @@ align-items: center;
 }
 .musicInfo{
     width: 100%;
-    height: 50%;
+    height: 40%;
     /* background-color: orange; */
+background: linear-gradient(#b85d12,#9c6008,#947504);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,8 +151,8 @@ border: 0px;
         /* background-color: black; */
     }
     .cardImg img{
-        width: 100% !important;
-        height: 150% !important;
+        width: 80% !important;
+        height: 120% !important;
     }
     .musicInfo{
         display: none;
@@ -164,6 +165,8 @@ border: 0px;
     .hide-element-on-keyboard {
         z-index: -1;
     }
-    
+    #searchAnotherLyrics{
+        margin: 5px !important;
+    }
    
 }
