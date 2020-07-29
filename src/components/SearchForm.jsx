@@ -107,7 +107,7 @@ getAlbumInfo();
                                 : <CircularProgress disableShrink/>}
                             {/* {albumInfo['#text'] ? <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> : <h1>Can't find the song art</h1>} */}
                         {/* <img src={albumInfo['#text']} style={{width:'80%',height:'80%'}}/> */}
-                        <Button id="searchAnotherLyrics" variant="contained" style={{margin:'20px'}}  href="">Search Another Lyrics</Button>
+                        <a href="" style={{textDecoration:'none'}}><Button id="searchAnotherLyrics" variant="contained" style={{margin:'20px'}}>Search Another Lyrics</Button></a>
 
                             </div>
                         <div className="musicInfo">
