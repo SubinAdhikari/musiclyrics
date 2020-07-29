@@ -1,0 +1,17 @@
+.homePageMainDiv{
+width: 80vw;
+height: 80vh;
+background-color: aliceblue;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow:20px 20px 30px grey; 
+}
+@media(max-width:768px){
+.homePageMainDiv{
+    height: 95vh;
+    width: 95vw;
+    background-color: white;
+}
+}

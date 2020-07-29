@@ -1,0 +1,4 @@
+Application name	musiclyrics
+API key	c3a01ce6fbd4b8aa86a5686356fe86ec
+Shared secret	2004a8bdc4e1c0289d52e0ec4b6f68e5
+Registered to	SubinAdhikari
