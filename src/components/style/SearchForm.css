@@ -118,6 +118,9 @@ align-items: center;
     text-align: center;
     overflow-y: scroll;
 } */
+.hide-element-on-keyboard {
+    z-index: 1;
+}
 @media(max-width:768px){
    
     .searchFormMainDiv{
@@ -157,6 +160,9 @@ border: 0px;
         width: 100%;
         height: 60%;
         /* background-color: blue; */
+    }
+    .hide-element-on-keyboard {
+        z-index: -1;
     }
     
    

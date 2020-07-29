@@ -115,7 +115,7 @@ getAlbumInfo();
                     </div>
                     <div className="musicLyrics">
                         {loading ? 
-                        lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="/">Back To Home Page</a></h1>
+                        lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="github.com/subinAdhikari/musiclyrics">Back To Home Page</a></h1>
                          : <CircularProgress disableShrink/> }
                     {/* {lyrics ? lyrics : <h1>Can't find the lyrics of the song <br/><a href="/">Back To Home Page</a></h1>} */}
                     </div>
