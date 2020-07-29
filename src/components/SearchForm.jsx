@@ -38,7 +38,7 @@ const inputValueChange = (event) =>{
     }
   
     async function getAlbumInfo(){
-        const res1 = await axios.get(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=c3a01ce6fbd4b8aa86a5686356fe86ec&artist=${input['artistname']}&album=${input['musicTitle']}&format=json`)
+        const res1 = await axios.get(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=c3a01ce6fbd4b8aa86a5686356fe86ec&artist=${input['artistname']}&album=${input['musicTitle']}&format=json`)
 
         .then( res1 =>{
                      console.log(res1);
