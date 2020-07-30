@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import axios from 'axios';
 import CircularProgress from '@material-ui/core/CircularProgress';
-
+import MusicPlayer from './MusicPlayer';
 
 const SearchForm = () =>{
     const [input,setInput]=useState({
@@ -111,8 +111,13 @@ getAlbumInfo();
 
                             </div>
                         <div className="musicInfo">
+                            <div className="info">
                             {`Artist Name :- ${input['artistname']}`}<br/>
-                            {`Music Title :- ${input['musicTitle']}`}
+                            {`Music Title :- ${input['musicTitle']}`}<br/>
+                            </div>
+                            <div className="musicPlayer">
+                            <MusicPlayer title={`${input['musicTitle']}.mp3`}/>
+                            </div>
                         </div>
                     </div>
                     <div className="musicLyrics">

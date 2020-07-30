@@ -99,6 +99,12 @@ background: linear-gradient(#b85d12,#9c6008,#947504);
     font-family: 'Recursive', sans-serif;
 
 }
+.musicPlayer{
+    width: 80%;
+    height: 30%;
+    /* background-color: red; */
+    margin-top: 40px;
+}
 .musicLyrics{
     width: 70%;
     height: 100%;
@@ -132,6 +138,7 @@ border: 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* background-color: red; */
     }
     .displayLyricsMain{
         flex-direction: column;
@@ -152,14 +159,25 @@ border: 0px;
     }
     .cardImg img{
         width: 80% !important;
-        height: 120% !important;
+        height: 100% !important;
     }
+    /* .musicInfo{
+        height:10px !important;
+    }
+    .musicInfo .musicPlayer{
+        margin: 0px !important;
+    } */
     .musicInfo{
+        background: white !important;
+        margin: 0px !important;
+        margin-bottom: 30px !important;
+    }
+    .info{
         display: none;
     }
     .musicLyrics{
         width: 100%;
-        height: 60%;
+        height: 50%;
         /* background-color: blue; */
     }
     .hide-element-on-keyboard {
